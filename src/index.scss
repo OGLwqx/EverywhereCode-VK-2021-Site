@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Шапка */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(247, 247, 247);
+}
+
+.header-nav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.header-nav__list > li {
+  list-style: none;
+  font-weight: bold;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 21px;
+  padding-bottom: 23px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(237, 237, 237);
+  }
+}
+
+/* Главная */
+
+section.main {
+  height: 100vh;
+  background-color: red;
+  background: linear-gradient(225deg, rgb(227, 221, 38), rgb(236, 24, 24));
+  display: flex;
+
+  .main__heading {
+    max-width: 50%;
+    height: 100%;
+    padding-top: 300px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-family: 'Roboto';
+  }
+
+  .main__header {
+    padding: 0;
+    margin: 0;
+    font-size: 75px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .main__persons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: rgb(15, 15, 15);
+    display: flex;
+    flex-direction: column;
+
+    .person-card {
+      margin-top: 20px;
+      box-shadow: 0px 2px 12px 1px rgb(255 255 255 / 50%);
+      background-color: white;
+      max-width: 700px;
+      background-color: rgb(250, 250, 250);
+      border-radius: 10px;
+      .person-card__heading {
+        padding: 15px;
+        background-color: #f0f0f0;
+        border-bottom: 1px #cccccc dashed;
+        border-radius: 10px 10px 0 0;
+        font-size: 26px;
+
+        .person-card__person-name {
+          color: rgb(5, 5, 5);
+          font-weight: bold;
+        }
+      }
+
+      .person-card__description {
+        padding: 15px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+
+.heading {
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+}
+
+section.services {
+  padding-bottom: 20px;
+
+  .services__cards {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    
+    .service-card {
+      border: 1px #cccccc solid;
+      max-width: 300px;
+      background-color: #ffa7a0;
+      border-radius: 10px;
+      .service-card__header {
+        padding: 15px;
+        background-color: #ffffff;
+        border-bottom: 1px #cccccc dashed;
+        border-radius: 10px 10px 0 0;
+        font-size: 26px;
+      }
+
+      .service-card__content {
+        color: #482b2b;
+        padding: 15px;
+        font-size: 17px;
+      }
+
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+section.contact-us {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 22px;
+  .contacts-subheading {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .contact-vk {
+    color: rgb(31, 0, 172);
+  }
+
+  .contact-email {
+    color: rgb(124, 3, 3);
+  }
+
+  .contact-link {
+    color: rgb(23, 27, 235);
+  }
+}
+
+footer {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  color: rgb(240, 240, 240);
+  background-color: rgb(37, 34, 34);
+}
